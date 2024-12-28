@@ -1,4 +1,4 @@
-const apiKey = 'e13a58f5afaf55e8ffe48821f901d742';
+const apiKey = process.env.OPENWEATHERMAP_API_KEY;
 async function fetchWeatherData(city) {
     try {
         const response = await fetch(
